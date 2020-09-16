@@ -8,7 +8,7 @@ import datetime
 
 x = datetime.datetime.now()
 
-print("Vandaag is het " + x.strftime("%d"), "van " + x.strftime ("%B"), ".")
+print("Vandaag is het " + x.strftime("%d"), "van " + x.strftime ("%B"), "")
 while True: 
      query = input('Wil je doorgaan? Y/N') 
      Fl = query[0].lower() 
