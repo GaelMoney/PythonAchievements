@@ -14,13 +14,18 @@ vers5 = "Mijn droom is hoog, maar mijn gezondheid hoger."
 
 print(vers1,vers2,vers3,vers4,vers5)
 
-while True: 
-    query = input('wil je dit opnieuw lezen? Y/N')
-    Fl = query[0].lower()
-    if query == '' or not Fl in ['y','n']:
-      	print('Antwoord met yes of nee thanks!')
-    else: break
+Fl = ""
+
+while True:
+	query = input('wil je dit opnieuw lezen? Y/N')
+	if len(query) > 0:
+		Fl = query[0].lower()
+		if Fl != 'y' and Fl != 'n':
+			print('Antwoord met yes of nee thanks!')
+		else: break
+	else: break
+
 if Fl == 'y':
-    print("here we go!")
-if Fl == 'n':
-    print("aawhh jammer bye bye")
+	print("here we go!")
+elif Fl == 'n':
+	print("aawhh jammer bye bye")
